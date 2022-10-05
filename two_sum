@@ -1,0 +1,26 @@
+#solution for O(n^2)
+# target=int(input("enter target"))
+# a = [1,2,3,4,5]
+# i=0
+# for i in range(0,len(a)):
+#   for j in range(0,len(a)):
+#     if a[i]+a[j]==target:
+#       print("the values are",a[i],a[j])
+ 
+#solution in O(n) 
+a=[2,7,11,15]
+target=int(input("enter target..."))
+i=0
+if a:
+  for i in range(0, len(a)):
+    b=target-a[i]
+    if a[i]==b:
+      continue
+      
+    if b in a:
+      print("the value is..",a[i],b)
+      break
+    i=i+1
+else:
+  print("a is empty")
+        
