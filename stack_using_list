@@ -1,0 +1,31 @@
+class list():
+  def __init__(self):
+    self.list=[]
+  def __str__(self):
+    values=self.list.reverse()
+    values=[str(x) for x in self.list]
+    return '\n'.join(values)
+
+  def isEmpty(self):
+    if self.list == []:
+      return "empty list"
+      
+
+  def push(self,data):
+    self.list.append(data)
+    return "list has been updated"
+
+  def pop(self):
+    self.list.pop()
+    
+      
+    
+l=list()
+
+l.push(5)
+l.push(10)
+l.push(15)
+l.push(20)
+
+l.pop()
+print(l)
