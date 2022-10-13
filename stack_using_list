@@ -18,7 +18,8 @@ class list():
   def pop(self):
     self.list.pop()
     
-      
+  def peek(self):
+    return self.list[len(self.list)-1]
     
 l=list()
 
@@ -28,4 +29,5 @@ l.push(15)
 l.push(20)
 
 l.pop()
+print(l.peek())
 print(l)
