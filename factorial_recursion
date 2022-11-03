@@ -1,0 +1,10 @@
+def fact(n):
+  if n<0 or int(n)!=n:
+    return "only positive integers are accepted!"
+  else:
+    if n in [0,1]:
+      return n
+    else:
+      return n*fact(n-1)
+
+print(fact(1.1))
