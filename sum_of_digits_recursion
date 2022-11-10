@@ -1,0 +1,9 @@
+def sumOfDigits(n):
+  if n<0 or int(n)!=n:
+    return "number should be a positive integer"
+  else:
+    if n==0:
+      return n
+    else:
+      return n%10 + sumOfDigits(n//10)
+print(sumOfDigits(12))      
