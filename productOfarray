@@ -1,0 +1,7 @@
+  def prodarray(n):
+  if len(n)==1:
+    return n[0]
+  else:  
+    return n[0] * prodarray(n[1:]) 
+
+print(prodarray([4,2,1,3]))
