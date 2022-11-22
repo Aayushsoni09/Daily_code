@@ -1,0 +1,10 @@
+def twosum(mylist,target):
+  i=0
+  for i in range(len(mylist)):
+    for j in range(i+1,len(mylist)):
+      if mylist[i]+mylist[j] == target:
+        print(i,j)
+      
+
+mylist=[0,1,2,3,4,5,6]
+twosum(mylist,6)
