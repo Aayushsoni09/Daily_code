@@ -1,0 +1,21 @@
+mylist=[1,2,3,4,5,6]
+def isUnique(mylist):
+  mylist2=[]
+  for i in range(len(mylist)):
+    if mylist[i] in mylist2:
+      print("not unique")
+    else:
+      mylist2.append(mylist[i])
+  if mylist==mylist2:
+    print("unique")
+
+isUnique(mylist)
+
+#-------------------easy way-----------------
+def isUnique2(mylist):
+  if set(mylist)==mylist:
+    print("unique")
+  else:
+    print("not unique")
+
+isUnique2(mylist)
