@@ -1,0 +1,11 @@
+mylist=[1,2,3,4,5,6,7,8,9]
+def maxproduct(mylist):
+  maxproduct=0
+  for i in range(len(mylist)):
+    for j in range(i+1,len(mylist)):
+      if mylist[i]*mylist[j] > maxproduct:
+        maxproduct=mylist[i]*mylist[j]
+        pairs=mylist[i],mylist[j]
+  print(maxproduct,pairs)     
+
+maxproduct(mylist)
