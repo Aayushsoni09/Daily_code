@@ -1,0 +1,12 @@
+mylist1=['a','b','c']
+mylist2=['b','c','a']
+
+def permutation(mylist1,mylist2):
+  mylist1.sort()
+  mylist2.sort()
+  if mylist1==mylist2:
+    return True
+  else:
+    return False
+
+print(permutation(mylist1,mylist2)
