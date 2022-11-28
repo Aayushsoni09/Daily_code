@@ -1,0 +1,14 @@
+a=[1,2,3,4]
+def firstsecond(a):
+  b=a
+  b.sort(reverse=True)
+  first=b[0]
+  i=0
+  for i in range(len(b)):
+    second=None
+    if b[i]!=first:
+      second=b[i]
+    else:
+      continue
+    return first,second 
+print(firstsecond(a))
